@@ -80,7 +80,7 @@ public class BinarySearchTree<T extends Comparable<? super T>>{
         if(value == null)
             return false;
 
-            return search(value, root) != null;
+        return search(value, root) != null;
     }
 
     private Node maximum(Node node){
