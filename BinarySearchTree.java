@@ -47,7 +47,7 @@ public class BinarySearchTree<T extends Comparable<? super T>>{
         int cmp = 0;
 
         while(aux != null){
-            cmp = aux.key.compareTo(toAdd);
+            cmp = aux.value.compareTo(toAdd);
             aux2 = aux;
 
             if(cmp == 0)
