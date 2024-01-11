@@ -1,17 +1,30 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        bst.Add(3);
+        bst.Add(-2);
+        bst.Add(5);
+        bst.Add(12);
+        bst.Add(-2);
+        bst.Add(-20);
+        bst.Add(200);
+        bst.Add(8);
+        bst.Add(4);
+        bst.Add(16);
+        bst.print();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        System.out.println("Beginning of remove method\n");
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        bst.remove(16);
+        bst.print();
+        bst.remove(-2);
+        bst.print();
+        bst.remove(5);
+        bst.print();
+        bst.remove(3);
+        bst.print();
+
     }
 }
